@@ -1,0 +1,30 @@
+GET http://localhost:8082/api/v1/rooms
+
+
+###
+GET http://localhost:8082/api/v1/rooms/67 
+
+###
+POST http://localhost:8082/api/v1/rooms HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample",
+    "date": "2021-09-23",
+    "startHour": "08:00",
+    "endHour": "08:00"
+}
+
+###
+PUT http://localhost:8082/api/v1/rooms/1 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Update",
+    "date": "2021-09-23",
+    "startHour": "08:00",
+    "endHour": "20:00"
+}
+
+###
+DELETE http://localhost:8082/api/v1/rooms/1 HTTP/1.1
